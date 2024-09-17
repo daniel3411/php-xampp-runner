@@ -4,9 +4,7 @@ A Visual Studio Code extension to run PHP files on a XAMPP local server.
 
 ## Features
 
-- Run PHP files directly from VSCode.
-- View output in the VSCode terminal.
-- Debug PHP files using XDebug.
+- Open `.php` or `.html` files in the default browser.
 
 ## Requirements
 
@@ -40,29 +38,24 @@ A Visual Studio Code extension to run PHP files on a XAMPP local server.
 
 ## Usage
 
-1. **Run PHP File**:
-   - Open a PHP file in VSCode.
-   - Run the command `Run PHP File` from the Command Palette (`Ctrl+Shift+P`).
+1. **Open in Default Browser**:
+   - Right-click on a `.php` or `.html` file in the VSCode explorer.
+   - Select `Open in Default Browser` from the context menu.
+   - Ensure your XAMPP server is running and the document root is set to your workspace folder.
 
-2. **Add a Keyboard Shortcut**:
-   - Open Keyboard Shortcuts (`Ctrl+K Ctrl+S`).
-   - Search for `Run PHP File`.
-   - Click on the `+` icon next to the command.
-   - Press the key combination you want to use (e.g., `Ctrl+Alt+R`).
-   - Press `Enter` to confirm.
+2. **Place Your Project Folder in `htdocs`**:
+   - Move your project folder inside the `htdocs` directory of your XAMPP installation. For example, if your project folder is named `my_project`, it should be located at `C:\xampp\htdocs\my_project`.
+   - This ensures that your PHP files are accessible via `http://localhost/your_project_folder/your_file.php`.
 
-2. **Debug PHP File**:
-   - Set breakpoints in your PHP file by clicking in the gutter next to the line numbers.
-   - Press `F5` to start debugging.
-   - Open your browser and navigate to the URL of your PHP file (e.g., `http://localhost/your_project_folder/your_file.php`).
+## License
 
-**License**:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-**Acknowledgements**:
-  - XAMPP
-  - Visual Studio Code
-  - Node.js
+## Acknowledgements
+
+- XAMPP
+- Visual Studio Code
+- Node.js
 
 ## Contribution
 
